@@ -1,0 +1,13 @@
+package: socket
+import:
+  - package: github.com/go-sql-driver/mysql
+  - package: github.com/modern-go/concurrent
+  - package: github.com/json-iterator/go
+  - package: github.com/jmoiron/sqlx
+  - package: github.com/gookit/config
+  - package: github.com/gookit/config/yaml
+  - package: github.com/pkg/errors
+  - package: github.com/modern-go/reflect2
+  - package: go.uber.org/zap
+  - package: github.com/natefinch/lumberjack
+  - package: go.uber.org/zap/zapcore
