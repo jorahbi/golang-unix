@@ -41,7 +41,7 @@ func Handle (s *socket.Socket) {
 		if err != nil {
 			logger.Handle.Panic("socket get request error",
 				zap.Int("socket id", s.GetFd()),
-				zap.String("request data", s.GetFd()),
+				zap.String("request data", request.OriginData()),
 				zap.String("error info ", err.Error()))
 			body := make(map[interface{}]interface{})
 			err := s.SetRespBody(1001, "", body).Send()
